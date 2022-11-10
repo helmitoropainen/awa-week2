@@ -11,7 +11,7 @@ app.use(bp.urlencoded({ extended: true }))
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
   res.send({msg: 'Hello World!'})
 })
 
